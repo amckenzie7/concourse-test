@@ -19,7 +19,7 @@ bash twistlock-repo/util/docker-engine.sh start
 echo
 
 echo "Downloading twistcli from Twistlock Console"
-curl -k -u ${TL_USER}:${TL_PASS} --output twistcli ${TL_CONSOLE_URL}/api/v1/util/twistcli
+curl -k -u ${TL_USER}:${TL_PASS} --output twistcli ${TL_CONSOLE_URL}/api/v22.01/util/twistcli
 # ...and ensure it's executable.
 chmod a+x twistcli
 echo
