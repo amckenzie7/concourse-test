@@ -20,6 +20,7 @@ params:
   TL_VULN_THRESH:
   TL_COMP_THRESH:
   TL_ONLY_FIXED:
+  TL_LABELS:
 
 run:
   path: twistlock-repo/twistcli-scan.sh
