@@ -9,6 +9,7 @@
 # TL_VULN_THRESH: "", "low", "medium", "high", "critical" (default: "")
 # TL_COMP_THRESH: "", "low", "medium", "high", "critical" (default: "")
 # TL_ONLY_FIXED: "", true, false (default: false)
+# TL_LABELS: The custom labels attached to the container
 ##################################################
 
 # packages needed by stable-dind container to run docker daemon and pull twistcli
@@ -47,6 +48,7 @@ echo
 ./twistcli images scan --details \
     --address ${TL_CONSOLE_URL} \
     --user ${TL_USER} --password ${TL_PASS} \
+    --custom-labels ${TL_LABELS} \
     ${thresh_args} \
     ${TL_IMAGE}
 
